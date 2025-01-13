@@ -36,6 +36,15 @@ a {
 main {
     background:#D2B48C;
 }
+.navbar1 a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.navbar1 a:hover {
+    color: #2c1a0d;
+    text-decoration: underline;
+}
 
 h1 {
     color: #D2B48C;
@@ -81,3 +90,13 @@ footer {
     justify-content: space-between;
     gap:10px;
     flex-wrap: wrap; }
+
+    .navbar2 a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .navbar2 a:hover {
+        color: #2c1a0d;
+        text-decoration: underline;
+    }

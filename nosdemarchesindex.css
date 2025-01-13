@@ -38,6 +38,16 @@ main {
     background:#d2b48c; /* Définit la couleur de fond du main */
 }
 
+.navbar1 a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.navbar1 a:hover {
+    color: #2c1a0d;
+    text-decoration: underline;
+}
+
 h1 {
     color: #d2b48c; /* Définit la couleur du titre */
     font-family: Playfair Display ; /* Définit la police du titre */
@@ -75,7 +85,9 @@ main {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère pour un effet de profondeur */
 }
 
-
+.demarches article:hover {
+    transform: scale(1.05); /* Agrandit au survol */
+}
 
 h2 {
     color: black; /* Définit la couleur du titre h2 */
@@ -133,7 +145,9 @@ h3 {
     color: #555; /* Définit une couleur grise pour le texte */
 }
 
-
+.label-list article:hover {
+    transform: scale(1.05); /* Agrandit au survol */
+}
 
 footer {
     font-family: Arial, sans-serif; /* Police simple */
@@ -158,4 +172,13 @@ footer {
         flex: 1 1 100%; /* Chaque article prend toute la largeur */
         margin-bottom: 20px; /* Espacement entre les articles */
     }
+}
+.navbar2 a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.navbar2 a:hover {
+    color: #2c1a0d;
+    text-decoration: underline;
 }

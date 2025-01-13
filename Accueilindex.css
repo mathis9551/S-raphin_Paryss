@@ -37,6 +37,16 @@ main {
     background: #FFFDD0; /* Couleur crème */
 }
 
+.navbar1 a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.navbar1 a:hover {
+    color: #2c1a0d;
+    text-decoration: underline;
+}
+
 h1 {
     color: #D2B48C; /* Couleur marron */
     font-family: Playfair Display; /* Police élégante */
@@ -136,6 +146,9 @@ h2 {
     font-size: 14px; /* Taille texte */
 }
 
+
+
+
 footer {
     font-family: Arial, sans-serif; /* Police simple */
     background-color: #3e2b2b; /* Couleur marron foncé */
@@ -147,4 +160,14 @@ footer {
     justify-content: space-between; /* Espacement égal */
     gap: 10px; /* Espace entre éléments */
     flex-wrap: wrap; /* Retourne ligne si nécessaire */
+}
+
+.navbar2 a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.navbar2 a:hover {
+    color: #2c1a0d;
+    text-decoration: underline;
 }

@@ -37,6 +37,15 @@ main {
     background: #d2b48c;
 }
 
+.navbar1 a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.navbar1 a:hover {
+    color: #2c1a0d;
+    text-decoration: underline;
+}
 h1 {
     color: #d2b48c;
     font-family: Playfair Display ;
@@ -106,6 +115,9 @@ h2 {
     justify-content: space-between;
 }
 
+.photo-item:hover {
+    transform: scale(1.05); /* Agrandit au survol */
+}
 /* Image à l'intérieur de chaque élément */
 .photo-item img {
     width: 100%;
@@ -145,4 +157,14 @@ footer {
     .photo-item {
         width: 100%; /* Les éléments occupent toute la largeur */
     }
+}
+
+.navbar2 a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.navbar2 a:hover {
+    color: #2c1a0d;
+    text-decoration: underline;
 }
