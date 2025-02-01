@@ -1,102 +1,115 @@
+/* Applique la boîte de modèle à tous les éléments pour inclure les marges et paddings dans la taille totale */
 * {
-    box-sizing: border-box; /* Inclut les marges */
+    box-sizing: border-box;
 }
+
+/* Mise en page du corps du site */
 body {
-    width: 100%; /* Largeur complète */
-    height: 100vh; /* Hauteur écran */
-    margin: 0; /* Supprime marges */
+    width: 100%; /* Utilise toute la largeur de l'écran */
+    height: 100vh; /* Prend toute la hauteur de l'écran */
+    margin: 0; /* Supprime les marges par défaut */
+    font-family: Arial, sans-serif; /* Police par défaut */
+    background-color: #D2B48C; /* Couleur de fond beige */
 }
 
+/* ----- HEADER ----- */
 header {
-    font-family: Arial, sans-serif; /* Police simple */
-    background-color: #3e2b2b; /* Couleur marron foncé */
+    background-color: #3e2b2b; /* Couleur de fond marron foncé */
 }
 
+/* Barre de navigation principale */
 .navbar1 {
-    padding: 20px; /* Espacement interne */
-    display: flex; /* Disposition flexible */
-    justify-content: space-between; /* Espacement égal */
-    gap: 10px; /* Espace entre éléments */
-    flex-wrap: wrap; /* Retourne ligne si nécessaire */
+    padding: 20px; /* Ajoute de l’espace autour du contenu */
+    display: flex; /* Affiche les éléments en ligne */
+    justify-content: space-between; /* Espace égal entre les éléments */
+    gap: 10px; /* Ajoute un espace entre les éléments */
+    flex-wrap: wrap; /* Permet le retour à la ligne sur petits écrans */
 }
+
+/* Liste des liens du menu */
 ul {
-    display: flex; /* Disposition en ligne */
-    justify-content: space-between; /* Espacement égal */
-    gap: 50px; /* Espace entre liens */
-    flex-wrap: wrap; /* Retourne ligne si nécessaire */
-    margin-right: 0px; /* Pas de marge droite */
+    display: flex; /* Affichage horizontal */
+    justify-content: space-between; /* Répartition des éléments */
+    gap: 50px; /* Espace entre les liens */
+    flex-wrap: wrap; /* Adaptation sur petits écrans */
 }
+
+/* Styles des liens */
 a {
-    text-decoration: none; /* Supprime soulignement */
-    color: #D2B48C; /* Couleur marron */
-    font-size: 18px; /* Taille texte */
-    font-weight: bold; /* Texte en gras */
-    margin-top: 14px; /* Espace haut */
-}
-main {
-    background:#D2B48C;
-}
-.navbar1 a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-.navbar1 a:hover {
-    color: #2c1a0d;
-    text-decoration: underline;
+    text-decoration: none; /* Supprime le soulignement */
+    color: #D2B48C; /* Couleur marron clair */
+    font-size: 18px; /* Taille du texte */
+    font-weight: bold; /* Met le texte en gras */
 }
 
+/* Effet au survol des liens */
+.navbar1 a:hover,
+.navbar2 a:hover {
+    color: #2c1a0d; /* Change la couleur au survol */
+    text-decoration: underline; /* Souligne le texte */
+}
+
+/* Titre principal */
 h1 {
-    color: #D2B48C;
-    font-family: Playfair Display ;
-    font-size: 30px;
-
+    color: #D2B48C; /* Couleur du texte */
+    font-family: 'Playfair Display', serif; /* Police élégante */
+    font-size: 30px; /* Taille du texte */
 }
-/* Section principale */
+
+/* ----- CONTENU PRINCIPAL ----- */
 main {
-    padding: 20px;
+    padding: 20px; /* Ajoute de l’espace autour du contenu */
+    background: #D2B48C; /* Couleur de fond beige */
 }
 
-/* Section des CGV */
+/* Section des conditions générales de vente (CGV) */
 .cgv {
-    background-color: white;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white; /* Fond blanc */
+    border-radius: 8px; /* Coins arrondis */
+    padding: 20px; /* Ajoute de l’espace intérieur */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
+    max-width: 800px; /* Limite la largeur pour une meilleure lisibilité */
+    margin: auto; /* Centre la section */
 }
 
-/* Titres des sections */
+/* Titres des sections dans la CGV */
 .cgv h2 {
-    font-size: 1.5rem;
-    color: #4E3B31;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    font-size: 1.5rem; /* Taille du titre */
+    color: #4E3B31; /* Couleur marron foncé */
+    margin-top: 20px; /* Espace au-dessus */
+    margin-bottom: 10px; /* Espace en dessous */
 }
 
-/* Texte des sections */
+/* Texte des paragraphes dans la CGV */
 .cgv p {
-    font-size: 1rem;
-    margin-bottom: 15px;
+    font-size: 1rem; /* Taille du texte */
+    margin-bottom: 15px; /* Ajoute de l’espace entre les paragraphes */
 }
 
-
+/* ----- FOOTER ----- */
 footer {
-    font-family: Arial, sans-serif; /* Police simple */
-    background-color: #3e2b2b; /* Couleur marron foncé */
+    background-color: #3e2b2b; /* Couleur de fond marron foncé */
+    padding: 20px 0; /* Ajoute de l’espace en haut et en bas */
 }
-.navbar2{
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    gap:10px;
-    flex-wrap: wrap; }
 
-    .navbar2 a {
-        text-decoration: none;
-        font-size: 1.2rem;
-        font-weight: bold;
-    }
-    .navbar2 a:hover {
-        color: #2c1a0d;
-        text-decoration: underline;
-    }
+/* Barre de navigation du footer */
+.navbar2 {
+    padding: 20px; /* Ajoute de l’espace interne */
+    display: flex; /* Affichage en ligne */
+    justify-content: space-between; /* Répartition des éléments */
+    gap: 10px; /* Espacement entre les éléments */
+    flex-wrap: wrap; /* Adaptation sur petits écrans */
+}
+
+/* Styles des liens du footer */
+.navbar2 a {
+    text-decoration: none; /* Supprime le soulignement */
+    font-size: 1.2rem; /* Taille du texte */
+    font-weight: bold; /* Met le texte en gras */
+}
+
+/* Logo dans la barre de navigation */
+.navbar2 img {
+    height: 85.8px;
+    width: 130px;
+}

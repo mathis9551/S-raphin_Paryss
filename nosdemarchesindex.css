@@ -35,7 +35,7 @@ a {
 }
 
 main {
-    background:#d2b48c; /* Définit la couleur de fond du main */
+    background:white; /* Définit la couleur de fond du main */
 }
 
 .navbar1 a {
@@ -104,7 +104,7 @@ h3 {
 .labels {
     text-align: center; /* Centre le texte dans la section */
     padding: 40px 20px; /* Ajoute un espacement interne autour de la section */
-    background:#d2b48c; /* Définit la couleur de fond des labels */
+    background:white; /* Définit la couleur de fond des labels */
 }
 
 .labels h2 {
